@@ -26,7 +26,7 @@ class Company:
         oldest_year = float("inf")
         winner = None
         for company in cls.all:
-            if company.founding_year < oldest_company:
+            if company.founding_year < oldest_year:
                 winner = company
                 oldest_year = company.founding_year
         return winner

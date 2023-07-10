@@ -14,13 +14,13 @@ class Dev:
                 company_list.append(freebie.company)
         return company_list
 
-    def received_one( item_name ):
+    def received_one( self, item_name ):
         for freebie in self.freebies():
             if freebie.item_name == item_name:
                 return True
         return False
 
-    def give_away( dev, freebie ):
+    def give_away( self, dev, freebie ):
         if freebie.dev == self:
             freebie.dev = dev
         else:

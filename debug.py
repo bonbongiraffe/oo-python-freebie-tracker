@@ -9,5 +9,7 @@ d2 = Dev("Emiley")
 f1 = Freebie("apple stuff", 100, d1, c1)
 f2 = Freebie("microsoft stuff", 100, d2, c2)
 f3 = Freebie("more apple stuff", 100, d2, c1)
-
+f1.print_details()
+f2.print_details()
+f3.print_details()
 ipdb.set_trace()
